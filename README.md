@@ -27,6 +27,7 @@ This project was created to learn how to perform dependency injection, the pytho
 * Wikipedia (Dependency injection) - https://en.wikipedia.org/wiki/Dependency_injection
 * baeldung (IoC and Dependency Injection in Spring) - https://www.baeldung.com/inversion-control-and-dependency-injection-in-spring
 * angularjs/docs - https://docs.angularjs.org/guide/di
+* pinject - https://github.com/google/pinject
 
 ___
 
