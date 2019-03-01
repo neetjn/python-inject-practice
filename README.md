@@ -5,7 +5,7 @@ This project was created to learn how to perform dependency injection, the pytho
 
 ## Experiments
 
-*
+* "instance" injection using **python-inject**. This injection strategy allows me to pull a binded dependency by object type from my injector given my configuration. See: [instance_injection.py](https://github.com/neetjn/python-inject-practice/instance_injection.py)
 
 ## What I've Learned
 
