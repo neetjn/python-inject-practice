@@ -13,6 +13,13 @@ This project was created to learn how to perform dependency injection, the pytho
 
 * Dependency injection is more of a development pattern than anything else.
 * Contrary to my original confusion, there are multiple ways of tackling dependency injection.
+* Angular.js, which I've been actively using for the past couple of years, revolves around dependency injection:
+  ```
+  angular.module('myModule', [])
+    .factory('serviceId', ['depService', depService => {
+      // ...
+    }])
+  ```
 * Spring and Guice tackle this ...
 
 ## Closing Thoughts
@@ -23,6 +30,7 @@ This project was created to learn how to perform dependency injection, the pytho
 
 * Wikipedia (Dependency injection) - https://en.wikipedia.org/wiki/Dependency_injection
 * baeldung (IoC and Dependency Injection in Spring) - https://www.baeldung.com/inversion-control-and-dependency-injection-in-spring
+* angularjs/docs - https://docs.angularjs.org/guide/di
 
 ___
 
