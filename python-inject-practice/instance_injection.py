@@ -27,7 +27,7 @@ def db_config(binder):
     binder.bind(Database, Database())
 
 
-inject.configure()
+inject.configure(db_config)
 
 save_user_age('john', 10)
 print(get_user_age('john'))
