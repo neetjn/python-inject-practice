@@ -7,7 +7,9 @@ This project was created to learn how to perform dependency injection, the pytho
 
 * "instance" injection using **python-inject**. This injection strategy allows me to pull a binded dependency by object type from my injector given my configuration. See: [instance_injection.py](https://github.com/neetjn/python-inject-practice/instance_injection.py)
 
-* "attribute" injection **python-inject**. This injection strategy allows me to bind a dependency from my injector into class instances. See: [attribute_injection.py](https://github.com/neetjn/python-inject-practice/attribute_injection.py)
+* "attribute" injection using **python-inject**. This injection strategy allows me to bind a dependency from my injector into class instances. See: [attribute_injection.py](https://github.com/neetjn/python-inject-practice/attribute_injection.py)
+
+* "param" injection using **python-inject**. This injection strategy allows me to inject dependencies into methods by param position or key. See: [param_injection.py](https://github.com/neetjn/python-inject-practice/param_injection.py)
 
 ## What I've Learned
 
