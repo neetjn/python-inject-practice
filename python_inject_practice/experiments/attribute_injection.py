@@ -1,20 +1,10 @@
 import inject
-
-
-class DatabaseClient:
-    """Theoretical client for database."""
-    data = {}
-
-    def get(self, key: str):
-        return self.data.get(key)
-
-    def save(self, key: str, value: all):
-        self.data.setdefault(key, value)
+from python_inject_practice.core.database import Database
 
 
 class User:
 
-    client = inject.attr(DatabaseClient)
+    client = inject.attr(Database)
 
     def __init__(self, username: str):
         self.username = username
@@ -34,7 +24,7 @@ class User:
 # Configuration for database binding
 def db_config(binder):
     # define a single instance of the database to use here
-    binder.bind(DatabaseClient, DatabaseClient())
+    binder.bind(Database, Database())
 
 
 # configure our injection with the database config
