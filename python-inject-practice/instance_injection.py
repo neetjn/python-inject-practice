@@ -3,22 +3,22 @@ import inject
 
 class Database:
     """Some theoretical database provider."""
-    cached = {}
+    data = {}
 
-    def get(self, key):
-        return self.cached.get(key)
+    def get(self, key: str):
+        return self.data.get(key)
 
-    def save(self, key, value):
-        self.cached.setdefault(key, value)
+    def save(self, key: str, value: all):
+        self.data.setdefault(key, value)
 
 
-def save_user_age(name, age):
+def save_user_age(name: str, age: int):
     """Saves some user's age in our theoretical database"""
     db = inject.instance(Database)
     db.save(name, age)
 
 
-def get_user_age(name):
+def get_user_age(name: str):
     """Fetch a user's age in our theoretical database"""
     db = inject.instance(Database)
     return db.get(name)
@@ -34,4 +34,4 @@ def db_config(binder):
 inject.configure(db_config)
 
 save_user_age('john', 10)
-print(get_user_age('john'))
+assert get_user_age('john') == 10
