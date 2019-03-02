@@ -22,9 +22,9 @@ This project was created to learn how to perform dependency injection, the pytho
   angular.module('myModule', [])
     .factory('serviceId', ['depService', depService => {
       // ...
-    }])
+    }])*
   ```
-* Spring and Guice tackle this ...
+* DI with **python-inject** can be very powerful with proper context control. IoC can also be incredibly helpful when using asynchronous code.
 
 ## Resources
 
